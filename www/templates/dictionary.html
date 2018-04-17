@@ -1,0 +1,15 @@
+<ion-view view-title="iTerms">
+  <ion-content>
+  <div class="search">
+  	   <label class="item item-input">
+          <i class="icon ion-ios-search placeholder-icon"></i>
+          <input type="text" placeholder="Search" ng-model="find">
+        </label>
+  </div>
+    <ion-list>
+      <ion-item ng-repeat="dict in dictionary | filter:find" href="#/app/dict/{{dict.id}}">
+        {{dict.letter}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,161 @@
+.my-container {
+    background-image:  url("img/aaa.jpg");
+    background-repeat: repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+}
+.transp {
+    background-color: #ff0;
+    color: #0ff;
+}
+.container{
+	width: 100%;
+	/*background-color: #000;*/
+	position: absolute;
+}
+.text{
+	/*background-color: #f00;*/
+	width: 60%;
+	position: absolute;
+	padding-left: 60px;
+	-webkit-animation:animatezoom 1s;animation:animatezoom 1s;
+}
+.word{
+	width: 100%;
+	border-bottom: 1px solid #dadada;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	margin-top: 30px;
+	color: #4c4c4c;
+	/*background-color: #f0f;*/
+}
+.word1{
+	width: 100%;
+	border-bottom: 1px solid #dadada;
+	font-size: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	margin-top: 30px;
+	color: #4c4c4c;
+	/*background-color: #f0f;*/
+}
+.definition{
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 28px;
+	width: 100%;
+	font-size: 18px;
+	color: #4c4c4c;
+}
+.pics {
+	/*background-color: #ff0;*/
+	float: right;
+	width: 40%;
+	text-align: left;
+	padding: 20px;
+	margin-top: 20px;
+}
+.imgcontainer{
+	width: 80%;
+	text-align: center;
+	/*background-color: #0f0;*/
+	padding: 10px;
+	-webkit-animation:animatezoom 1.4s;animation:animatezoom 1.4s;
+}
+.img{
+	width: 100%;
+	 box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.search{
+	width: 100%;
+	height: 45px;
+}
+.input{
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+@media only screen and (max-width:1100px){
+	.text{
+		padding-left: 5px;
+		width: 50%;
+	}
+	.imgcontainer{
+		width: 100%
+	}
+	.pics{
+		width: 50%;
+	}
+	.img{
+		width: 80%;
+	}
+}
+@media only screen and (max-width:750px){
+	.text{
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 100%;
+		position: relative;
+	}
+	.word{
+		font-size: 20px;
+	}
+	.word1{
+		font-size: 20px;
+	}
+	.definition{
+		font-size: 15px;
+	}
+	.imgcontainer{
+		width: 100%
+	}
+	.pics{
+		width: 100%;
+		position: relative;
+	}
+	.img{
+		width: 80%;
+	}
+	.img1{
+		width: 40%;
+		margin-top: -20px;
+	}
+}
+@media only screen and (max-width:300px){
+	.text{
+		padding-left: 5px;
+		padding-right: 5px; 
+		width: 100%;
+		position: relative;
+	}
+	.imgcontainer{
+		width: 100%
+	}
+	.pics{
+		width: 100%;
+		padding: 5px;
+		position: relative;
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+	.img{
+		width: 100%;
+	}
+}
